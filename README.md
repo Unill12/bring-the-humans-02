@@ -23,6 +23,7 @@ Panduan ini membawamu melewati seluruh putaran itu, dari akun kosong sampai hadi
 - [Langkah 5 — Bundle, cek, submit](#langkah-5--bundle-cek-submit)
 - [Langkah 6 — Baca papan skor, perbaiki yang gagal, submit lagi](#langkah-6--baca-papan-skor-perbaiki-yang-gagal-submit-lagi)
 - [Langkah 7 — Klaim USDC-mu](#langkah-7--klaim-usdc-mu)
+- [Rencana hari pertamamu](#rencana-hari-pertamamu)
 - [Cara kedua dapat uang: link referral-mu sendiri](#cara-kedua-dapat-uang-link-referral-mu-sendiri)
 - [Kesalahan yang membuat pemula kehilangan entrinya](#kesalahan-yang-membuat-pemula-kehilangan-entrinya)
 - [FAQ](#faq)
@@ -138,7 +139,7 @@ node cli/makefun.mjs submit --competition <bounty-slug> \
 node cli/makefun.mjs status
 ```
 
-menunjukkan entrimu dan posisinya: **submitted**, **checked**, **scored**, atau **rejected**. Entri yang ditolak mencantumkan setiap pemeriksaan yang gagal beserta perbaikannya. Terapkan perbaikannya dan submit lagi — kamu bisa terus sampai tenggat, dalam batas entri harian bounty itu (`node cli/makefun.mjs status --competition <bounty-slug>` menunjukkan sisanya). EntrI terbarumu adalah yang dihitung, kecuali kamu memilih yang lebih awal.
+menunjukkan entrimu dan posisinya: **submitted**, **checked**, **scored**, atau **rejected**. Entri yang ditolak mencantumkan setiap pemeriksaan yang gagal beserta perbaikannya. Terapkan perbaikannya dan submit lagi — kamu bisa terus sampai tenggat, dalam batas entri harian bounty itu (`node cli/makefun.mjs status --competition <bounty-slug>` menunjukkan sisanya). Entri terbarumu adalah yang dihitung, kecuali kamu memilih yang lebih awal.
 
 Dua hal tentang papan skor yang sering menjebak pemula:
 
@@ -156,6 +157,18 @@ node cli/makefun.mjs claim --claim <claim-id> \
 
 `--us-person` menjawab satu pertanyaan di layar klaim — jawab `yes` kalau kamu warga Amerika Serikat. Hadiah dibayar dalam USDC di Solana ke dompetmu sendiri, setelah pemeriksaan sanksi otomatis. Klaim segera: jendela klaim terbatas, dan hadiah yang tidak diklaim bisa berpindah ke entri berikutnya. Formulir pajak hanya diminta kalau hukum Amerika Serikat mengharuskannya — W-9 untuk warga Amerika Serikat, W-8BEN untuk yang lain — dan hanya setelah total hadiahmu dari make.fun dalam satu tahun kalender mencapai ambang pelaporan $2.000.
 
+## Rencana hari pertamamu
+
+Kalau semua ini terasa banyak, berikut jadwal realistis untuk putaran pertamamu. Tidak perlu diselesaikan dalam satu duduk — yang penting setiap langkahnya benar.
+
+**Pagi (30 menit): siapkan fondasi.** Daftar lewat link referral, lengkapi profil, hubungkan GitHub dan dompet Solana, lalu jalankan `login` di kit sekali. Jangan lewati langkah ini: entri yang dibangun tanpa akun yang terhubung tidak bisa diklaim hadiahnya.
+
+**Siang (1 jam): pilih dan pelajari.** Buka halaman bounty yang kamu incar, baca `RULES.txt` di kitnya sampai habis, dan jalankan `grade-local` kalau tersedia. Kalau ada bagian aturan yang tidak kamu mengerti setelah dua kali baca, bounty itu mungkin bukan pilihan pertama yang tepat.
+
+**Sore (2–3 jam): bangun.** Biarkan agenmu bekerja di sesi yang baru, periksa hasil bangunannya dengan tanganmu sendiri, dan jalankan pemeriksaan lokal. Kalau ada yang gagal, perbaiki sekarang — bukan setelah submit.
+
+**Malam (30 menit): submit dan baca papan.** Bundle transkripnya, jalankan `check`, lalu submit. Setelah itu baca status entrinya dan catat apa yang perlu diperbaiki besok. Putaran pertama yang selesai — walau belum menang — mengajarkan lebih banyak daripada sepuluh bounty yang hanya dibaca aturannya.
+
 ## Cara kedua dapat uang: link referral-mu sendiri
 
 Menang bukan satu-satunya cara make.fun membayar. Setiap akun mendapat link referral, `https://make.fun/r/<kode>`, dan `?ref=<kode>` di halaman make.fun mana pun bekerja dengan cara yang sama. Kamu mendapat:
@@ -167,6 +180,8 @@ Menang bukan satu-satunya cara make.fun membayar. Setiap akun mendapat link refe
 10% itu dibayar make.fun di atas — orang yang kamu referensikan tetap menerima hadiahnya utuh. Link-mu, nilai tiap hadiah saat ini, dan semua yang sudah kamu peroleh ada di tab **Referrals** di profilmu, dan kamu mengklaim hadiah referral di sana juga.
 
 Dua hal yang perlu diketahui. Pertama, referral terikat pada kode yang pertama kali dilihat browser pengunjung, dan sentuhan pertama itu menang selama 60 hari — tautan yang datang belakangan tidak menggantikannya. Kedua, hanya orang sungguhan yang dihitung: pemeriksaan yang sama yang membayar hadiah referral yang memutuskan pendaftaran mana yang dihitung, jadi akunmu sendiri, pendaftaran yang berbagi jaringan denganmu, akun menganggur yang tidak pernah ikut serta, dan bot tidak pernah dibayar. Setiap hadiah ditinjau setidaknya sehari sebelum bisa kamu klaim, dan dibayarkan di Solana setelah disetujui.
+
+Cara paling wajar membagikan link-mu adalah ke orang yang memang sedang mencari jalan masuk ke dunia ini: teman yang sudah memakai agen AI, komunitas developer atau kreator di WhatsApp, Telegram, atau Discord, dan siapa pun yang bertanya bagaimana cara mulai menghasilkan dari AI. Jangan mengirimnya ke orang yang tidak meminta — link yang dibagikan ke orang yang tepat bekerja jauh lebih baik daripada link yang disebar ke mana-mana.
 
 Kalau panduan ini membantumu, mendaftar lewat [link saya](https://make.fun/r/z8qf6ayd) — kode `z8qf6ayd` — adalah cara yang baik untuk berterima kasih, dan tidak merugikanmu sama sekali.
 
@@ -191,6 +206,12 @@ Sebagian besar bounty gratis diikuti, dan tidak ada pembayaran yang diperlukan u
 <summary><strong>Bisakah saya percaya pada make.fun dengan karya saya?</strong></summary>
 
 Ya. make.fun dijalankan oleh EZO Labs Inc., perusahaan Delaware. Hadiah dikunci di escrow on-chain yang berkode terbuka saat bounty dibuka. Dan make.fun bukan makefun.ai, bukan library Python makefun, dan bukan launchpad Make Fun lama di Base.
+</details>
+
+<details>
+<summary><strong>Berapa lama hasil final keluar?</strong></summary>
+
+Setiap bounty punya fasenya sendiri di halaman bounty: kapan entri ditutup, kapan penilaian final berjalan, dan kapan hasil diumumkan. Skor yang kamu lihat sebelum tenggat bersifat sementara dan bisa bergerak. Setelah tenggat, ada pemeriksaan akhir atas semua entri — baru sesudah itu papan final dipublikasikan dan hadiah bisa diklaim.
 </details>
 
 <details>
